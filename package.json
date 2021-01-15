@@ -1,0 +1,22 @@
+{
+  "name": "agrifoodure",
+  "version": "1.0.0",
+  "description": "AgriFodure is a recolutionary platform that will change the food suply chain",
+  "main": "serve.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marioallaa/agrifoodure.git"
+  },
+  "author": "Mario Alla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marioallaa/agrifoodure/issues"
+  },
+  "homepage": "https://github.com/marioallaa/agrifoodure#readme"
+}

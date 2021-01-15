@@ -1,2 +1,0 @@
-# agrifoodure
-hult prize project
