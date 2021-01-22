@@ -132,7 +132,7 @@ a:focus {
 /* Hero */
 
 #hero {
-  background-image: url(/img/grain.jpeg);
+  background-image: url(/img/grain.png);
   background-repeat: no-repeat;
   height: 120vh;
   min-height: 375px;
@@ -186,7 +186,7 @@ a:focus {
 
 .tm-hero-title {
   font-size: 3.5rem;
-  text-shadow: 2px 2px 2px #333;
+  text-shadow: 2px 2px 2px rgb(46, 45, 45);
 }
 
 .tm-intro-next {
@@ -462,6 +462,12 @@ figure.effect-honey:hover h2 i {
   transition: all 0.3s ease;
 }
 
+.vidcontainer {
+	margin: 20px auto;
+	max-width: 500px;
+	border: black 2px;
+}
+
 .tm-contact-item-link:hover i,
 .tm-contact-item-link:hover span {
   color: #e7b613;
@@ -517,10 +523,22 @@ p {
   line-height: 1.9;
 }
 
+.nd{
+  margin-top: 69px;
+}
+
 @media (min-width: 768px) {
   .tm-intro-text-container {
     padding-left: 65px;
   }
+
+
+
+  .nd{
+    margin-top: 0px;
+  }
+  
+
 
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 30px;
