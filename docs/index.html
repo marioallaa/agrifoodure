@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel='stylesheet' href='https://unpkg.com/bootstrap/dist/css/bootstrap.min.css'>
     <link rel='stylesheet' href='https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C600%2C700%2C700italic%7COswald%3A400%2C300%7CVollkorn%3A400%2C400italic'>
+    <link rel="stylesheet" href="/css/header_style.css">
     <link rel="stylesheet" href="/css/video.css">
     <link rel="stylesheet" href="/css/templatemo-style.css" />
     <link rel="icon" href="/img/logo.png" sizes="16x16 32x32" type="image/png">
@@ -23,7 +26,13 @@
 
 
     <!-- Hero section -->
-    <section id="hero" class="text-white tm-font-big tm-parallax">
+    <section id="" class="">
+
+
+
+
+
+
       <!-- Navigation -->
       <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
         <div class="container">   
@@ -45,11 +54,11 @@
                         Services 
                     </a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                   <a class="nav-link tm-nav-link" href="#work">
                         Hear us out
                   </a>
-              </li>
+              </li> -->
               <li class="nav-item">
                   <a class="nav-link tm-nav-link" href="#contact">
                       Contact
@@ -59,23 +68,32 @@
           </div>        
         </div>
       </nav>
-      
-      <div class="text-center tm-hero-text-container" >
-        <!-- <div style="background-color: rgb(136, 136, 136); opacity: 0.3; width: 100%; height:120vh; position: relative;"> 
-        </div>      -->
-        <div class="tm-hero-text-container-inner">
-          <h2 class="tm-hero-title"> AgriFoodure </h2>
-          <h4 class="tm-hero-subtitle">
-          Minimizing food waste & overcoming world famine!
-          </h4>
-        </div>   
-      </div>
 
-      <div class="tm-next tm-intro-next">
-        <a href="#introduction" class="text-center tm-down-arrow-link">
-          <i class="fas fa-3x fa-caret-down tm-down-arrow"></i>
-        </a>
-      </div>      
+
+
+       
+    <script id="comp" type="text/x-template">
+      <div class="embed-youtube" @click.once="start" :style="blankStyle">
+        <div class="play-button" v-if="!load"></div>
+        <b-embed v-if="code" v-bind="embed" allowfullscreen="allowfullscreen"></b-embed>
+      </div>
+    </script>
+
+
+
+    <div id="app" class="col-md-12" >
+      <b-container fluid="fluid" class="col-md-12" style="margin-top: 72px;">
+        <b-row align-h="center">
+          <b-col class="pr-4" cols="12" md="8" ml="12">
+            <comp code="a75vaZXY4v8" thumb="maxresdefault"></comp>
+          </b-col>
+        </b-row>
+      </b-container>
+    </div>
+
+
+
+
     </section>
 
     <section id="introduction" class="tm-section-pad-top">
@@ -153,7 +171,14 @@
 
 
     
-    <script id="comp" type="text/x-template">
+    <section id="work" class="tm-section-pad-top">    
+      <div class="container" style="padding: 36px;"> 
+        <h2 class="tm-text-primary mb-4 tm-section-title"></h2>
+      </div>
+    </section>
+
+    
+    <!-- <script id="comp" type="text/x-template">
       <div class="embed-youtube" @click.once="start" :style="blankStyle">
         <div class="play-button" v-if="!load"></div>
         <b-embed v-if="code" v-bind="embed" allowfullscreen="allowfullscreen"></b-embed>
@@ -187,7 +212,7 @@
 
     <section id="work" class="tm-section-pad-top">
       <div class="container tm-container-gallery">
-        <div class="row">
+        <div class="row"> -->
 
           
 
@@ -199,9 +224,6 @@
         <div class="row">
             <div class="col-12">
 
-              <div class="vidcontainer">
-                <div id="player" data-plyr-provider="youtube"></div>
-              </div>
 
                 <!--div class="mx-auto tm-gallery-container">
                     <div class="grid tm-gallery">
@@ -292,15 +314,15 @@
             </div>
             
             <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-              <a href="tel:0100200340" class="tm-contact-item-link">
+              <a href="tel:+447404826404" class="tm-contact-item-link">
                   <i class="fas fa-3x fa-phone mr-4"></i>
                   <span class="mb-0">+447404826404</span>
               </a>              
             </div>
             <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-              <a href="mailto:info@company.co" class="tm-contact-item-link">
+              <a href="mailto:mario@alla.al" class="tm-contact-item-link">
                   <i class="fas fa-3x fa-envelope mr-4"></i>
-                  <span class="mb-0">mario@alla.al</span>
+                  <span class="mb-0">info@agrifoodure.com</span>
               </a>              
             </div>
             <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
@@ -326,25 +348,15 @@
     <script src="/js/jquery-1.9.1.min.js"></script>     
     <script src="/slick/slick.min.js"></script>
     <script src='https://unpkg.com/vue/dist/vue.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
     <script src='https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js'></script>
     <script  src="/js/video_script.js"></script>
+    <script  src="/js/header_script.js"></script>
     <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="/js/jquery.singlePageNav.min.js"></script>     
     <script src="/js/bootstrap.min.js"></script> 
     <script>
 
-      var youtubeId='bTqVqk7FSmY';
-      var playerElmId='#player';
-      jQuery(playerElmId).attr('data-plyr-embed-id', youtubeId);
-      var player = new Plyr(playerElmId, {
-        fullscreen:{enabled:false},
-        controls:['play-large', 'current-time','volume'],
-        keyboard: {focused: false, global: false}
-      });
-
-      player.on('playing',evt => {
-          player.volume=0.6;
-      })
 
       
       function getOffSet(){

@@ -38,7 +38,9 @@ a:focus {
 }
 
 .btn:hover {
-  background-color: #4c9c01;
+  background-color: black;
+  color:white;
+  border-width: 0px;
 }
 
 .tm-section-pad-top {
@@ -474,7 +476,7 @@ figure.effect-honey:hover h2 i {
 
 .tm-contact-item-link:hover i,
 .tm-contact-item-link:hover span {
-  color: #e7b613;
+  color: black;
 }
 
 .tm-input {
@@ -519,7 +521,7 @@ figure.effect-honey:hover h2 i {
 
 .tm-footer-link:hover,
 .tm-footer-link:focus {
-  color: #e7b613;
+  color: black;
   text-decoration: none;
 }
 
