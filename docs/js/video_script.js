@@ -57,8 +57,8 @@ const comp = {
         return {
           type: 'b-img-lazy',
           aspect: this.aspect,
-          src: `img/af-big.png` };
-          //src: `https://img.youtube.com/vi/${this.code}/${this.thumb}.jpg` };
+          // src: `img/af-big.png` };
+          src: `https://img.youtube.com/vi/${this.code}/${this.thumb}.jpg` };
 
       }
     } },

@@ -30,11 +30,15 @@ a:focus {
 }
 
 .btn {
+  color: white;
+  border-width: 1px;
+  border-color:  white;
+  border-radius: 5px;
   padding: 8px 32px;
 }
 
 .btn:hover {
-  background-color: #ced4da;
+  background-color: #4c9c01;
 }
 
 .tm-section-pad-top {
@@ -68,17 +72,17 @@ a:focus {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background-color: transparent;
+  background-color: white;
   transition: all 0.3s ease;
 }
 
 .tm-navbar.scroll {
   background-color: white;
-  border-bottom: 1px solid #e9ecef;
+  border-bottom: 1px solid #dddfe0;
 }
 
 .navbar-brand {
-  color: white;
+  color: #e7b613;
   font-size: 1.4rem;
   font-weight: bold;
 }
@@ -89,7 +93,7 @@ a:focus {
 }
 
 .tm-navbar.scroll .navbar-brand {
-  color: #8f8f8f;
+  color: #e7b613;
 }
 
 .nav-item {
@@ -97,11 +101,11 @@ a:focus {
 }
 
 .tm-nav-link {
-  color: white;
+  color:   #e7b613;
 }
 
 .tm-navbar.scroll .tm-nav-link {
-  color: #8f8f8f;
+  color: #e7b613;
 }
 
 .tm-navbar.scroll .tm-nav-link:hover,
@@ -117,16 +121,16 @@ a:focus {
 }
 
 .navbar-toggler-icon {
-  color: white;
+  color:  #e7b613;
   padding-top: 6px;
 }
 
 .tm-navbar.scroll .navbar-toggler {
-  border: 1px solid #8f8f8f;
+  border: 1px solid #e7b613;
 }
 
 .tm-navbar.scroll .navbar-toggler-icon {
-  color: #8f8f8f;
+  color:  #e7b613;
 }
 
 /* Hero */
@@ -178,7 +182,7 @@ a:focus {
   z-index: 2;
   position: absolute;
   align-content: center;
-  display: block;
+  display: grid;
   right: 0;
   left: 0;
   margin-top: -90px;
@@ -425,7 +429,7 @@ figure.effect-honey:hover h2 i {
 
 #contact {
   color: white;
-  background-image: url(/img/grain-1.jpeg);
+  background-color: #e7b613;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;  
@@ -599,7 +603,7 @@ p {
   }
 
   .navbar-collapse .nav-link {
-    color: #8f8f8f;
+    color: #e7b613;
   }
 }
 
